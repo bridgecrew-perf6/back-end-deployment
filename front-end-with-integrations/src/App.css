@@ -1,15 +1,32 @@
-/* COSTUME */
+.App {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.3em;
+  color: blueviolet;
+  letter-spacing: 1.3px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 body {
   background-color: #e7f3f7;
 }
 
 #listContainer {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-top: 12em;
-  width: 600px;
-  transform: translate(-50%, -50%);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
   border-radius: 4px;
   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -27,49 +44,6 @@ body {
   overflow-y: scroll;
 }
 
-input {
-  width: 70%;
-  padding: 0.5em;
-  font-size: 0.7em;
-  border: 1px solid #4f29f0;
-  border-radius: 3px;
-  border-radius: 3px;
-  margin-left: 2em;
-  margin-top: 2em;
-}
-
-input:hover {
-  border: solid 1px blueviolet;
-}
-
-input:focus {
-  outline: none !important;
-  border: solid 1px darkblue;
-}
-
-button {
-  border: 1px solid #4f29f0;
-  padding: 7px 25px;
-  margin-left: 3px;
-  border-radius: 3px;
-  font-size: 18px;
-  background: white;
-  transition: background 0.2s linear;
-}
-
-button:hover {
-  background: #4f29f0;
-  color: #fff;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 0px;
-  margin-top: 1em;
-  font-size: 80px;
-  opacity: 0.5;
-}
-
 h3 {
   text-align: center;
   font-weight: 400;
@@ -77,4 +51,98 @@ h3 {
   margin-top: 0.6em;
   font-size: 30px;
   opacity: 0.7;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 0.87em;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 1em;
+    font-size: 50px;
+    opacity: 0.5;
+  }
+
+  #toDoInput {
+    width: 60%;
+    padding: 0.5em;
+    font-size: 0.7em;
+    border: 1px solid #4f29f0;
+    border-radius: 3px;
+    border-radius: 3px;
+    margin-left: 0em;
+    margin-top: 2em;
+  }
+
+  #toDoInput:hover {
+    border: solid 1px blueviolet;
+  }
+
+  #toDoInput:focus {
+    outline: none !important;
+    border: solid 1px darkblue;
+  }
+
+  button {
+    border: 1px solid #4f29f0;
+    padding: 7px 6px;
+    margin-left: 3px;
+    border-radius: 3px;
+    font-size: 0.7em;
+    background: white;
+    transition: background 0.2s linear;
+  }
+
+  button:hover {
+    background: #4f29f0;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 1em;
+    font-size: 80px;
+    opacity: 0.5;
+  }
+
+  #toDoInput {
+    width: 70%;
+    padding: 0.5em;
+    font-size: 0.7em;
+    border: 1px solid #4f29f0;
+    border-radius: 3px;
+    border-radius: 3px;
+    margin-left: 2em;
+    margin-top: 2em;
+  }
+
+  #toDoInput:hover {
+    border: solid 1px blueviolet;
+  }
+
+  #toDoInput:focus {
+    outline: none !important;
+    border: solid 1px darkblue;
+  }
+
+  button {
+    border: 1px solid #4f29f0;
+    padding: 7px 25px;
+    margin-left: 3px;
+    border-radius: 3px;
+    font-size: 18px;
+    background: white;
+    transition: background 0.2s linear;
+  }
+
+  button:hover {
+    background: #4f29f0;
+    color: #fff;
+  }
 }
