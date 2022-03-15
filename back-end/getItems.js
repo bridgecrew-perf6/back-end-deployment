@@ -4,7 +4,7 @@ AWS.config.update({ region: "eu-west-1" });
 const docClient = new AWS.DynamoDB.DocumentClient();
 
 // update HERE
-const TABLE_NAME = "toDoListItems";
+const TABLE_NAME = "route53Table";
 
 const headers = {
   "Access-Control-Allow-Headers": "application/json",
